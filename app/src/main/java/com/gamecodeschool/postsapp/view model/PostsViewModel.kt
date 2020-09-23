@@ -26,4 +26,8 @@ class postsViewModel(val postsRepository:PostsRepository): ViewModel(){
         }
 
     }
+    fun getDbPosts(){
+        postsLiveData = postsRepository.getDbPosts()
+
+    }
 }
