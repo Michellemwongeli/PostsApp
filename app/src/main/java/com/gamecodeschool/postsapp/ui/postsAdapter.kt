@@ -1,12 +1,13 @@
 package com.gamecodeschool.postsapp.ui
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.gamecodeschool.postsapp.Repository.Posts
 
 class postsAdapter (var postsList: List<Posts>) :
-    RecyclerView.Adapter<PostsAdapter.PostsViewHolder>() {
+    RecyclerView.Adapter<postsAdapter.PostsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostsViewHolder {
         var itemView =
