@@ -7,56 +7,24 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvBody"
-        android:layout_width="122dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="68dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Body" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="105dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="100dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        tools:text="Email" />
-
-    <TextView
-        android:id="@+id/tvIdentity"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="155dp"
-        android:text="Identity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvEmail"
-        tools:text="Id" />
-
-    <TextView
         android:id="@+id/tvName"
         android:layout_width="98dp"
         android:layout_height="29dp"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="64dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="181dp"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvIdentity" />
-
-    <TextView
-        android:id="@+id/tvPostId"
-        android:layout_width="67dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="133dp"
-        android:text="post id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

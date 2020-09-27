@@ -13,7 +13,7 @@ private val Any.coroutineScope: Unit
 class postsViewModel(val postsRepository:PostsRepository): ViewModel(){
     var postsLiveData= MutableLiveData<List<Post>>()
     var postsFailedLiveData =MutableLiveData<String>()
-
+lateinit var postByIdLiveDta: LiveData<Post>
     fun getPosts(){
         viewModelScope.launch{ this.coroutineScope
         val response = postsRepository.getPosts()
@@ -28,6 +28,10 @@ class postsViewModel(val postsRepository:PostsRepository): ViewModel(){
     }
     fun getDbPosts(){
         postsLiveData = postsRepository.getDbPosts()
+
+    }
+    fun getDbPosts(postId: Int){
+
 
     }
 }

@@ -7,9 +7,7 @@ import com.gamecodeschool.postsapp.model.Post
 import retrofit2.http.Query
 
 interface PostsDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertPost(post: Post)
 
-@Query( value = "SELECT * FROM posts")
-fun getPosts(): LiveData<List<Post>>
-}
+
+}@Query(value:"SELECT * FROM posts WHERE id = :postId")
+        fun getPostById(postId: Int) LiveData<Post>
